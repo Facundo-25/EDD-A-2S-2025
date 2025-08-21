@@ -1,0 +1,11 @@
+{
+  "vehiculos" : [
+    {
+      "id" : 1,
+      "marca" : "Toyota",
+      "modelo" : "Corolla",
+      "propietario" : "Luis Garcia",
+      "correo" : "lg@edd.com"
+    }
+  ]
+}
