@@ -1,0 +1,33 @@
+digraph ListaEnlazada {
+  rankdir=LR;
+  nodesep=0.5;
+
+  subgraph cluster_0 {
+    label="Lista simple enlazada";
+    fontsize=14;
+    color=black;
+    style=filled;
+    fillcolor=white;
+    node [shape=record, style=filled, fillcolor=lightblue];
+
+    nodo0 [label="{1 \n Luis Garcia \n lgarcia \n lg@edd.com \n 12345678}"];
+    nodo0 -> nodo1;
+    nodo1 [label="{2 \n Marcos Itzep \n mitzep \n mi@edd.com \n 87654321}"];
+    nodo1 -> nodo2;
+    nodo2 [label="{3 \n Greg Kroah-Hartman \n gkroah-hartman \n gkroah-hartman@edd.com \n 31628954}"];
+    nodo2 -> nodo3;
+    nodo3 [label="{4 \n Mark Shuttleworth \n mshuttleworth \n mshuttleworth@edd.com \n 76018423}"];
+    nodo3 -> nodo4;
+    nodo4 [label="{5 \n Steven Mejia \n smejia \n sm@edd.com \n 23419875}"];
+    nodo4 -> nodo5;
+    nodo5 [label="{6 \n Brian Fox \n bfox \n bfox@edd.com \n 64578231}"];
+    nodo5 -> nodo6;
+    nodo6 [label="{7 \n Jon Corbet \n jcorbet \n jcorbet@edd.com \n 75849231}"];
+    nodo6 -> nodo7;
+    nodo7 [label="{8 \n Karen Sandler \n ksandler \n ksandler@edd.com \n 89514362}"];
+    nodo7 -> nodo8;
+    nodo8 [label="{9 \n Mitchell Baker \n mbaker \n mbaker@edd.com \n 19384756}"];
+    nodo8 -> nodo9;
+    nodo9 [label="{10 \n Ian Murdock \n imurdock \n imurdock@edd.com \n 41235678}"];
+  }
+}

@@ -1,0 +1,8 @@
+digraph ListaDeListas {
+  rankdir=LR;
+  nodesep=0.5;
+  edge [arrowhead=normal];
+  node [shape=record, style=filled, fillcolor=lightyellow];
+
+  null [label="VACÍA", shape=plaintext];
+}
