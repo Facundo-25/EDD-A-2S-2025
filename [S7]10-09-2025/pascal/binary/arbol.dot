@@ -1,0 +1,10 @@
+digraph ArbolBinario {
+  node [shape=circle, style=filled, color=lightblue];
+  "15" [label="15: Quince"];
+  "15" -> "5";
+  "5" [label="5: Cinco actualizado"];
+  "5" -> "3";
+  "3" [label="3: Tres"];
+  "5" -> "7";
+  "7" [label="7: Siete"];
+}

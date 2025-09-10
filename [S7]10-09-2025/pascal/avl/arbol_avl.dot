@@ -1,0 +1,10 @@
+digraph ArbolAVL {
+  node [shape=circle, style=filled, color=lightblue];
+  "5" [label="5: Cinco actualizado (Alt: 3)"];
+  "5" -> "3";
+  "3" [label="3: Tres (Alt: 1)"];
+  "5" -> "15";
+  "15" [label="15: Quince (Alt: 2)"];
+  "15" -> "7";
+  "7" [label="7: Siete (Alt: 1)"];
+}
