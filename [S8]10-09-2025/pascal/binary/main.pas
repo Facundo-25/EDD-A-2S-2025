@@ -188,8 +188,6 @@ end;
 
 // Programa principal
 begin
-  Writeln('--- Árbol Binario en Pascal (FPC/Linux) ---');
-
   // Insertar nodos de ejemplo
   Insertar(raiz, 10, 'Diez');
   GenerarDOT(raiz, 'arbol.dot');

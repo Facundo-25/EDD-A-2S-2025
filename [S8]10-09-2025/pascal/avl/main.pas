@@ -1,6 +1,5 @@
 program ArbolAVL;
 
-// Incluye la unidad SysUtils para funciones de manejo de archivos y strings
 uses
   SysUtils;
 
@@ -341,32 +340,41 @@ end;
 
 // Programa principal
 begin
-  Writeln('--- Árbol AVL en Pascal (FPC/Linux) ---');
-
   // Insertar nodos de ejemplo (usar función Insertar que retorna PNodo)
   raiz := Insertar(raiz, 10, 'Diez');
+  GenerarDOT(raiz, 'arbol_avl.dot');
+  ReadLn;
+
   raiz := Insertar(raiz, 5, 'Cinco');
+  GenerarDOT(raiz, 'arbol_avl.dot');
+  ReadLn;
+
   raiz := Insertar(raiz, 15, 'Quince');
+  GenerarDOT(raiz, 'arbol_avl.dot');
+  ReadLn;
+
   raiz := Insertar(raiz, 3, 'Tres');
+  GenerarDOT(raiz, 'arbol_avl.dot');
+  ReadLn;
+
   raiz := Insertar(raiz, 7, 'Siete');
+  GenerarDOT(raiz, 'arbol_avl.dot');
+  ReadLn;
 
   Writeln('Árbol después de insertar:');
   InOrden(raiz); // Mostrar árbol en orden
 
   // Actualizar un nodo
   Actualizar(raiz, 5, 'Cinco actualizado');
-
   Writeln('Árbol después de actualizar:');
-  InOrden(raiz); // Mostrar árbol actualizado
+  InOrden(raiz);
+  GenerarDOT(raiz, 'arbol_avl.dot');
+  ReadLn;
 
   // Eliminar un nodo
   raiz := Eliminar(raiz, 10);
-
   Writeln('Árbol después de eliminar la clave 10:');
   InOrden(raiz); // Mostrar árbol final
-
-  // Generar archivo .dot para visualización
   GenerarDOT(raiz, 'arbol_avl.dot');
 
-  ReadLn; // Pausar ejecución
 end.
