@@ -1,0 +1,8 @@
+digraph ArbolB {
+  node [shape=record, style=filled, fillcolor=lightblue];
+  nodo1 [label="|<0>5:Cinco actualizado", shape=record];
+  nodo1 -> nodo6;
+  nodo6 [label="|<0>3:Tres", shape=record];
+  nodo1 -> nodo7;
+  nodo7 [label="|<0>7:Siete", shape=record];
+}
