@@ -2,10 +2,10 @@ digraph Blockchain {
   rankdir=LR;
   node [shape=box, fontsize=10];
 
-  nodo1 [label="#0\ngenesis -> network\nBloque Génesis\nPrevHash: 0\nHash: 000010D6"];
-  nodo2 [label="#1\nfacundo@edd.com -> ana@edd.com\nHola Ana, como estas?\nPrevHash: 000010D6\nHash: 000016DE"];
-  nodo3 [label="#2\nana@edd.com -> luis@edd.com\nLuis, decile a facundo que me conteste\nPrevHash: 000016DE\nHash: 00001C56"];
-  nodo4 [label="#3\nluis@edd.com -> maria@edd.com\nMaría, hiciste la tarea de edd?.\nPrevHash: 00001C56\nHash: 00001B51"];
+  nodo1 [label="#0\ngenesis -> network\nBloque Génesis\nPrevHash: 0\nHash: 000010E6"];
+  nodo2 [label="#1\nfacundo@edd.com -> ana@edd.com\nHola Ana, como estas?\nPrevHash: 000010E6\nHash: 000016EF"];
+  nodo3 [label="#2\nana@edd.com -> luis@edd.com\nLuis, decile a facundo que me conteste\nPrevHash: 000016EF\nHash: 00001C68"];
+  nodo4 [label="#3\nluis@edd.com -> maria@edd.com\nMaría, hiciste la tarea de edd?.\nPrevHash: 00001C68\nHash: 00001B64"];
 
   nodo1 -> nodo2;
   nodo2 -> nodo3;
